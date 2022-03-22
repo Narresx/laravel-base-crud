@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div>hello world</div>
+    @yield('content')
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
 </body>
 
