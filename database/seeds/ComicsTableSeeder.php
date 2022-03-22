@@ -129,6 +129,6 @@ class ComicsTableSeeder extends Seeder
             $new_comic = new Comic();
             $new_comic->fill($comic);
             $new_comic->save();
-        }
+        };
     }
 }
