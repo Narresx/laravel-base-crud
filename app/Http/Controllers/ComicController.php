@@ -126,7 +126,7 @@ class ComicController extends Controller
             ],
           ];       
 
-        return view('comics.index', compact('comics'))
+        return view('comics.index', compact('comics'));
     }
 
     /**
