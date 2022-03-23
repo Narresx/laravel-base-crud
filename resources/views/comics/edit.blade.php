@@ -9,7 +9,7 @@
             </ul>
         </div>
     @endif
-    <form class="container" action="{{ route('comics.update' $comic->id) }}" method="POST">
+    <form class="container" action="{{ route('comics.update', $comic->id) }}" method="POST">
         @method('PUT')
         @csrf
         <div class="mb-3">
