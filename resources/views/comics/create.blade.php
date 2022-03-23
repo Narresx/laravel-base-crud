@@ -3,7 +3,16 @@
     <div class="container text-center">
         <h2>Add a comic</h2>
     </div>
-    <form action="{{ route('comics.store') }}" method="POST">
+    @if ($errors->any())
+        <div class="container alert alert-primary">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    <form class="container" action="{{ route('comics.store') }}" method="POST">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
